@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+  background-color: #114B5F;
+}
+
+canvas {
+  display: block;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  color: #E4FDE1;
+  font-family: 'Audiowide';
+  text-align: center;
+  
+}
+
+.buttons {
+  padding: 32px 16px;
+}
