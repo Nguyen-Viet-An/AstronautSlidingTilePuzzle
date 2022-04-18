@@ -3,14 +3,17 @@ A sliding tile puzzle game featuring an astronaut image. Player can reshuffle th
 
 Interface of the game 
 
-![image](https://user-images.githubusercontent.com/68835511/162111282-66726685-4736-416e-9097-6061cf82d66a.png)
+![image](https://user-images.githubusercontent.com/68835511/163840172-c6667a05-bdff-443a-a2d0-c535983b5d10.png)
 
 
-Choose the board size to your liking
 
-![image](https://user-images.githubusercontent.com/68835511/162111390-f7115ce5-d644-4592-b29a-b87e8505e9fa.png)
 
+Choose the board size to your liking:
+
+![image](https://user-images.githubusercontent.com/68835511/163840199-faaf97e6-f060-4092-a6f7-82966b1b5a46.png)
+
+![image](https://user-images.githubusercontent.com/68835511/163840218-26694ba4-69f4-4941-a4c3-0ced65d8a581.png)
 
 Project is inspired by Daniel Shiffman's Coding Challenge #51
 
-You can play this game here: https://nguyen-viet-an.github.io/astronautslidingtilepuzzle/
+You can play this game here: https://nguyen-viet-an.github.io/AstronautSlidingTilePuzzle/
