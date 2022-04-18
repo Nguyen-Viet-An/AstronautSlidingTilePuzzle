@@ -23,24 +23,33 @@ function setup() {
   let myDiv = createDiv().addClass("buttons");
   let btn1 = createButton('Re-shuffle').parent(myDiv);
   let btn2 = createButton('3x3').parent(myDiv);
-  let btn3 = createButton('5x5').parent(myDiv);
+  let btn3 = createButton('4x4').parent(myDiv);
+  let btn4 = createButton('5x5').parent(myDiv);
+
   btn1.style('font-size', '15px');
   btn1.style('background-color', '#4CAF50');
   btn1.style('padding: 15px 20px');
-  btn1.style('margin-left: 60px');
-  btn1.style('margin-right: 60px');
+  btn1.style('margin-left: 10px');
+  btn1.style('margin-right: 40px');
 
   btn2.style('font-size', '15px');
   btn2.style('background-color', '#4CAF50');
   btn2.style('padding: 15px 25px');
-  btn2.style('margin-left: 60px');
-  btn2.style('margin-right: 60px');
+  btn2.style('margin-left: 40px');
+  btn2.style('margin-right: 40px');
 
   btn3.style('font-size', '15px');
   btn3.style('background-color', '#4CAF50');
   btn3.style('padding: 15px 25px');
-  btn3.style('margin-left: 60px');
-  btn3.style('margin-right: 60px');
+  btn3.style('margin-left: 40px');
+  btn3.style('margin-right: 40px');
+
+  btn4.style('font-size', '15px');
+  btn4.style('background-color', '#4CAF50');
+  btn4.style('padding: 15px 25px');
+  btn4.style('margin-left: 40px');
+  btn4.style('margin-right: 40px');
+  
   
   
   
@@ -78,8 +87,20 @@ function setup() {
 
   });
 
-  // Turn it into 24-slide puzzle
+  // Turn it into 16-slide puzzle
   btn3.mousePressed(() => {
+    board.length = 0;
+    tiles.length = 0;
+    boardChop(4,4)
+    slideShuffle(board);
+    while (!isSolvable()) {
+      slideShuffle(board);
+    }
+
+  });
+
+    // Turn it into 24-slide puzzle
+  btn4.mousePressed(() => {
     board.length = 0;
     tiles.length = 0;
     boardChop(5,5)
@@ -87,7 +108,6 @@ function setup() {
     while (!isSolvable()) {
       slideShuffle(board);
     }
-
   });
 
 }
@@ -181,6 +201,7 @@ function draw() {
   // If it is solved
   if (isSolved()) {
     console.log("SOLVED");
+    noLoop();
     alert("Solved! Cogratulations!")
     
   }
